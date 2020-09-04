@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">r_add_st1_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fir_filter_4</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">r_add_st1_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fir_filter_4</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">r_add_st1_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fir_filter_4</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">r_add_st1_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fir_filter_4</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">r_add_st1_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fir_filter_4</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">r_add_st1_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fir_filter_4</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">r_add_st1_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fir_filter_4</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">r_add_st1_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fir_filter_4</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">r_add_st1_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fir_filter_4</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">r_add_st1_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fir_filter_4</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">r_add_st1_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fir_filter_4</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">r_add_st1_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fir_filter_4</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">r_add_st1_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fir_filter_4</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">r_add_st1_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fir_filter_4</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">r_add_st1_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fir_filter_4</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">r_add_st1_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fir_filter_4</arg>&gt;.
+</msg>
+
+</messages>
+

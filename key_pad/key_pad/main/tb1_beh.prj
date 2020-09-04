@@ -1,0 +1,2 @@
+vhdl work "keyPad.vhd"
+vhdl work "tb1.vhd"

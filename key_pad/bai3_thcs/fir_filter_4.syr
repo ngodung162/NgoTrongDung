@@ -1,0 +1,417 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.28 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.28 secs
+ 
+--> Reading design: fir_filter_4.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "fir_filter_4.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "fir_filter_4"
+Output Format                      : NGC
+Target Device                      : xc7k325t-2-ffg900
+
+---- Source Options
+Top Module Name                    : fir_filter_4
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Admin\Desktop\key_pad\bai3_thcs\bai3.vhd" into library work
+Parsing entity <fir_filter_4>.
+Parsing architecture <rtl> of entity <fir_filter_4>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <fir_filter_4> (architecture <rtl>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <fir_filter_4>.
+    Related source file is "C:\Users\Admin\Desktop\key_pad\bai3_thcs\bai3.vhd".
+    Found 8-bit register for signal <p_data<1>>.
+    Found 8-bit register for signal <p_data<2>>.
+    Found 8-bit register for signal <p_data<3>>.
+    Found 8-bit register for signal <r_coeff<0>>.
+    Found 8-bit register for signal <r_coeff<1>>.
+    Found 8-bit register for signal <r_coeff<2>>.
+    Found 8-bit register for signal <r_coeff<3>>.
+    Found 8-bit register for signal <p_data<0>>.
+    Found 16-bit register for signal <r_mult<0>>.
+    Found 16-bit register for signal <r_mult<1>>.
+    Found 16-bit register for signal <r_mult<2>>.
+    Found 16-bit register for signal <r_mult<3>>.
+    Found 17-bit register for signal <r_add_st0<0>>.
+    Found 17-bit register for signal <r_add_st0<1>>.
+    Found 18-bit register for signal <r_add_st1>.
+    Found 10-bit register for signal <o_data>.
+    Found 17-bit adder for signal <r_mult[0][15]_r_mult[1][15]_add_16_OUT> created at line 59.
+    Found 17-bit adder for signal <r_mult[2][15]_r_mult[3][15]_add_17_OUT> created at line 59.
+    Found 18-bit adder for signal <r_add_st0[0][16]_r_add_st0[1][16]_add_20_OUT> created at line 68.
+    Found 8x8-bit multiplier for signal <p_data[0][7]_r_coeff[0][7]_MuLt_8_OUT> created at line 49.
+    Found 8x8-bit multiplier for signal <p_data[1][7]_r_coeff[1][7]_MuLt_9_OUT> created at line 49.
+    Found 8x8-bit multiplier for signal <p_data[2][7]_r_coeff[2][7]_MuLt_10_OUT> created at line 49.
+    Found 8x8-bit multiplier for signal <p_data[3][7]_r_coeff[3][7]_MuLt_11_OUT> created at line 49.
+    Summary:
+	inferred   4 Multiplier(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred 190 D-type flip-flop(s).
+Unit <fir_filter_4> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 4
+ 8x8-bit multiplier                                    : 4
+# Adders/Subtractors                                   : 3
+ 17-bit adder                                          : 2
+ 18-bit adder                                          : 1
+# Registers                                            : 16
+ 10-bit register                                       : 1
+ 16-bit register                                       : 4
+ 17-bit register                                       : 2
+ 18-bit register                                       : 1
+ 8-bit register                                        : 8
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <r_add_st1_0> of sequential type is unconnected in block <fir_filter_4>.
+WARNING:Xst:2677 - Node <r_add_st1_1> of sequential type is unconnected in block <fir_filter_4>.
+WARNING:Xst:2677 - Node <r_add_st1_2> of sequential type is unconnected in block <fir_filter_4>.
+WARNING:Xst:2677 - Node <r_add_st1_3> of sequential type is unconnected in block <fir_filter_4>.
+WARNING:Xst:2677 - Node <r_add_st1_4> of sequential type is unconnected in block <fir_filter_4>.
+WARNING:Xst:2677 - Node <r_add_st1_5> of sequential type is unconnected in block <fir_filter_4>.
+WARNING:Xst:2677 - Node <r_add_st1_6> of sequential type is unconnected in block <fir_filter_4>.
+WARNING:Xst:2677 - Node <r_add_st1_7> of sequential type is unconnected in block <fir_filter_4>.
+WARNING:Xst:2677 - Node <r_add_st1_0> of sequential type is unconnected in block <fir_filter_4>.
+WARNING:Xst:2677 - Node <r_add_st1_1> of sequential type is unconnected in block <fir_filter_4>.
+WARNING:Xst:2677 - Node <r_add_st1_2> of sequential type is unconnected in block <fir_filter_4>.
+WARNING:Xst:2677 - Node <r_add_st1_3> of sequential type is unconnected in block <fir_filter_4>.
+WARNING:Xst:2677 - Node <r_add_st1_4> of sequential type is unconnected in block <fir_filter_4>.
+WARNING:Xst:2677 - Node <r_add_st1_5> of sequential type is unconnected in block <fir_filter_4>.
+WARNING:Xst:2677 - Node <r_add_st1_6> of sequential type is unconnected in block <fir_filter_4>.
+WARNING:Xst:2677 - Node <r_add_st1_7> of sequential type is unconnected in block <fir_filter_4>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 4
+ 8x8-bit multiplier                                    : 4
+# Adders/Subtractors                                   : 3
+ 17-bit adder                                          : 2
+ 18-bit adder                                          : 1
+# Registers                                            : 182
+ Flip-Flops                                            : 182
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <fir_filter_4> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block fir_filter_4, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 182
+ Flip-Flops                                            : 182
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : fir_filter_4.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 148
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 52
+#      MUXCY                       : 49
+#      VCC                         : 1
+#      XORCY                       : 44
+# FlipFlops/Latches                : 182
+#      FDC                         : 182
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 51
+#      IBUF                        : 41
+#      OBUF                        : 10
+# DSPs                             : 4
+#      DSP48E1                     : 4
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7k325tffg900-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             182  out of  407600     0%  
+ Number of Slice LUTs:                   53  out of  203800     0%  
+    Number used as Logic:                53  out of  203800     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    191
+   Number with an unused Flip Flop:       9  out of    191     4%  
+   Number with an unused LUT:           138  out of    191    72%  
+   Number of fully used LUT-FF pairs:    44  out of    191    23%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          52
+ Number of bonded IOBs:                  52  out of    500    10%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+ Number of DSP48E1s:                      4  out of    840     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+i_clk                              | BUFGP                  | 182   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 3.747ns (Maximum Frequency: 266.916MHz)
+   Minimum input arrival time before clock: 1.154ns
+   Maximum output required time after clock: 0.575ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'i_clk'
+  Clock period: 3.747ns (frequency: 266.916MHz)
+  Total number of paths / destination ports: 4065 / 142
+-------------------------------------------------------------------------
+Delay:               3.747ns (Levels of Logic = 1)
+  Source:            r_coeff_0_7 (FF)
+  Destination:       r_mult_0_0 (FF)
+  Source Clock:      i_clk rising
+  Destination Clock: i_clk rising
+
+  Data Path: r_coeff_0_7 to r_mult_0_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             18   0.236   0.434  r_coeff_0_7 (r_coeff_0_7)
+     DSP48E1:A7->P15       1   2.737   0.339  Mmult_p_data[0][7]_r_coeff[0][7]_MuLt_8_OUT (p_data[0][7]_r_coeff[0][7]_MuLt_8_OUT<15>)
+     FDC:D                    -0.000          r_mult_0_15
+    ----------------------------------------
+    Total                      3.747ns (2.973ns logic, 0.774ns route)
+                                       (79.4% logic, 20.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'i_clk'
+  Total number of paths / destination ports: 222 / 222
+-------------------------------------------------------------------------
+Offset:              1.154ns (Levels of Logic = 2)
+  Source:            i_rstb (PAD)
+  Destination:       r_coeff_2_0 (FF)
+  Destination Clock: i_clk rising
+
+  Data Path: i_rstb to r_coeff_2_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.000   0.339  i_rstb_IBUF (i_rstb_IBUF)
+     INV:I->O            182   0.054   0.497  i_rstb_inv1_INV_0 (i_rstb_inv)
+     FDC:CLR                   0.264          r_coeff_2_0
+    ----------------------------------------
+    Total                      1.154ns (0.318ns logic, 0.836ns route)
+                                       (27.6% logic, 72.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'i_clk'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              0.575ns (Levels of Logic = 1)
+  Source:            o_data_9 (FF)
+  Destination:       o_data<9> (PAD)
+  Source Clock:      i_clk rising
+
+  Data Path: o_data_9 to o_data<9>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.236   0.339  o_data_9 (o_data_9)
+     OBUF:I->O                 0.000          o_data_9_OBUF (o_data<9>)
+    ----------------------------------------
+    Total                      0.575ns (0.236ns logic, 0.339ns route)
+                                       (41.0% logic, 59.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock i_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_clk          |    3.747|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 19.09 secs
+ 
+--> 
+
+Total memory usage is 4695456 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   16 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

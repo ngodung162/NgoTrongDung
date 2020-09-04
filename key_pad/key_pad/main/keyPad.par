@@ -1,0 +1,20 @@
+Release 14.7 par P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+ADMIN-PC::  Sat May 09 14:55:43 2020
+
+par -w -intstyle ise -ol high -mt off keyPad_map.ncd keyPad.ncd keyPad.pcf 
+
+
+Constraints file: keyPad.pcf.
+Loading device for application Rf_Device from file '7k325t.nph' in environment E:\xilinx\14.7\ISE_DS\ISE\.
+   "keyPad" is an NCD, version 3.2, device xc7k325t, package ffg900, speed -2
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 0.970 Volts. (default - Range: 0.970 to 1.030 Volts)
+
+INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
+   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
+   internal clocks in this design. Because there are not defined timing requirements, a timing score will not be
+   reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock.
+   Note: For the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high".

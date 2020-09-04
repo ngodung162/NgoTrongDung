@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "C:/Users/Admin/Desktop/key_pad/bai3_thcs/fir_filter_4.xst" -ofn "C:/Users/Admin/Desktop/key_pad/bai3_thcs/fir_filter_4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k325t-ffg900-2 fir_filter_4.ngc fir_filter_4.ngd  
+map -intstyle ise -p xc7k325t-ffg900-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o fir_filter_4_map.ncd fir_filter_4.ngd fir_filter_4.pcf 
+par -w -intstyle ise -ol high -mt off fir_filter_4_map.ncd fir_filter_4.ncd fir_filter_4.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml fir_filter_4.twx fir_filter_4.ncd -o fir_filter_4.twr fir_filter_4.pcf 
+xst -intstyle ise -ifn "C:/Users/Admin/Desktop/key_pad/bai3_thcs/fir_filter_4.xst" -ofn "C:/Users/Admin/Desktop/key_pad/bai3_thcs/fir_filter_4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k325t-ffg900-2 fir_filter_4.ngc fir_filter_4.ngd  
+map -intstyle ise -p xc7k325t-ffg900-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o fir_filter_4_map.ncd fir_filter_4.ngd fir_filter_4.pcf 
+par -w -intstyle ise -ol high -mt off fir_filter_4_map.ncd fir_filter_4.ncd fir_filter_4.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml fir_filter_4.twx fir_filter_4.ncd -o fir_filter_4.twr fir_filter_4.pcf 
